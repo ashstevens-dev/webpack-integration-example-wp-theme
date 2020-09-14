@@ -1,0 +1,9 @@
+/* include the Gutenberg block styling */
+@import '../../../../../../wp-includes/css/dist/block-library/style.css';
+
+/* example of background image usage. images need to be in src/assets/images to be picked up and copied into dist upon compiling */
+.element {
+    background: url("../images/image.png") no-repeat center;
+}
+
+/* your other SASS/CSS styles... */
