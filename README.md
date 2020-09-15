@@ -3,7 +3,7 @@ Simple example template illustrating how you can modify a WordPress theme to inc
 
 ## Getting Started
 1. Add package.json to your theme root and edit the name and author values as appropriate
-2. Analyze/edit your style.css file. It should only have the header comment section at the top. Any other styles should be placed into a .scss file. You can add in nesting, mixins, partials, functions, etc. to harness the full power of Sass later. It will work as is (with plain CSS)
+2. Analyze/edit your style.css file. It should only have the header comment section at the top. Any other styles should be placed into a .scss file. You can add in nesting, mixins, partials, functions, etc. to harness the full power of Sass later. It will work as-is (with plain CSS)
 3. Reference the scss file in this example. It illustrates how to include background images on elements; and it has the line you need to use to include Gutenberg's block styles
 4. Ensure your theme has a matching directory structure to what's illustrated here (Sass in src/assets/styles, JS in src/assets/scripts, images referenced by the stylesheet in src/assets/images)
 5. Add the index.js file into the src/ directory and update the imports to include your stylesheets/javascript files (don't touch the Font Awesome block *unless* you want to remove it or modify it to utilize tree-shaking methods)
@@ -28,4 +28,4 @@ This will recompile code as you go, making a full build unnecessary while you're
 Include the ```<i>``` tag inline where you want it to appear in pages, posts, theme files, etc. Reference the online library to find the free icon you want to add https://fontawesome.com/icons?d=gallery&m=free
 
 ## :sparkles: Moving on
-There are many other Webpack features I did not include or go over in this example including code-splitting, working with other types of files (JSON, locally-included fonts, SVG images, etc.), linting, and more. This is just a very simple example that could either be expanded & improved upon or used as is for simple website projects.
+There are many other Webpack features I did not include or go over in this example including code-splitting, working with other types of files (JSON, locally-included fonts, SVG images, etc.), linting, and more. This is just a very simple example that could either be expanded & improved upon or used as-is for simple website projects.
