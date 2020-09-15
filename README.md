@@ -27,5 +27,5 @@ This will recompile code as you go, making a full build unnecessary while you're
 ## Use Font Awesome in your theme
 Include the ```<i>``` tag inline where you want it to appear in pages, posts, theme files, etc. Reference the online library to find the free icon you want to add https://fontawesome.com/icons?d=gallery&m=free
 
-## Moving on
+## :sparkles: Moving on
 There are many other Webpack features I did not include or go over in this example including code-splitting, working with other types of files (JSON, locally-included fonts, SVG images, etc.), linting, and more. This is just a very simple example that could either be expanded & improved upon or used as is for simple website projects.
