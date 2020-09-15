@@ -3,7 +3,7 @@ Simple example template illustrating how you can modify a WordPress theme to inc
 
 ## Getting Started
 1. Add package.json to your theme root and edit the name and author values as appropriate
-2. Analyze/edit your style.css file. It should only have the header comment section at the top. Any other styles should be placed into a .scss file. You can add in nesting, mixins, partials, functions, and clean up the stylesheet to use the full power of Sass later. It will work as is
+2. Analyze/edit your style.css file. It should only have the header comment section at the top. Any other styles should be placed into a .scss file. You can add in nesting, mixins, partials, functions, etc. to harness the full power of Sass later. It will work as is (with plain CSS)
 3. Reference the scss file in this example. It illustrates how to include background images on elements, and has the line you need to use to include Gutenberg's block styles
 4. Ensure your theme has a matching directory structure to what's illustrated here (Sass in src/assets/styles, JS in src/assets/scripts, images referenced by the stylesheet in src/assets/images)
 5. Add the index.js file into the src/ directory and update the imports to include your stylesheets/javascript files (don't touch the Font Awesome block *unless* you want to remove it or modify it to utilize tree-shaking methods)
