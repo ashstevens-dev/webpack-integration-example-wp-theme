@@ -20,8 +20,9 @@ Simple example template illustrating how you can modify a WordPress theme to inc
 ``` npm run dist ```
 
 ## Run Webpack in watch mode
-This will recompile code as you go, making a full build unnecessary while you're developing/making updates.
 ``` npm run watch ```
+
+This will recompile code as you go, making a full build unnecessary while you're developing/making updates.
 
 ## Use Font Awesome in your theme
 Include the ```<i>``` tag inline where you want it to appear in pages, posts, theme files, etc. Reference the online library to find the free icon you want to add https://fontawesome.com/icons?d=gallery&m=free
