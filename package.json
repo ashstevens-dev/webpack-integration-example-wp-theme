@@ -2,7 +2,8 @@
   "name": "THEMENAME",
   "version": "1.0.0",
   "description": "",
-  "private": true, // prevents accidental publication of private repositories on npm
+  # private:true prevents accidental publication of private repositories on npm
+  "private": true,
   "scripts": {
     "build": "webpack --mode development",
     "dist": "webpack --mode production",
