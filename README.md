@@ -3,11 +3,12 @@ Simple example template illustrating how you can modify a WordPress theme to inc
 
 ## Getting Started
 1. Add package.json to your theme root and edit the name and author values as appropriate
-2. Edit your style.css file. It should only have the header comment section at the top. Any other styles should be placed into a .scss file. You can add in nesting, mixins, partials, functions, and clean up the stylesheet to use the full power of Sass later. It will work as is.
-3. Ensure your theme has a matching directory structure to what's illustrated here (Sass in src/assets/styles, JS in src/assets/scripts, images referenced by the stylesheet in src/assets/images)
-4. Add the index.js file into the src/ directory and update the imports to include your stylesheets/javascript files (don't touch the Font Awesome block *unless* you want to remove it or modify it to utilize tree-shaking methods)
-5. Edit your functions.php file as illustrated here. Add the block of code to unhook Gutenberg. Modify your enqueues to simply include the bundled css and js (and any additional scripts/styles if you choose not to bundle them with the rest)
-6. If you need/want multiple bundles, edit the webpack.config.js file to add more entries (see line 16)
+2. Analyze/edit your style.css file. It should only have the header comment section at the top. Any other styles should be placed into a .scss file. You can add in nesting, mixins, partials, functions, and clean up the stylesheet to use the full power of Sass later. It will work as is
+3. Reference the scss file in this example. It illustrates how to include background images on elements, and has the line you need to use to include Gutenberg's block styles
+4. Ensure your theme has a matching directory structure to what's illustrated here (Sass in src/assets/styles, JS in src/assets/scripts, images referenced by the stylesheet in src/assets/images)
+5. Add the index.js file into the src/ directory and update the imports to include your stylesheets/javascript files (don't touch the Font Awesome block *unless* you want to remove it or modify it to utilize tree-shaking methods)
+6. Edit your functions.php file as illustrated. Modify your enqueues to simply include the bundled css and js (and any additional scripts/styles if you choose not to bundle them with the rest). Add the block of code to unhook Gutenberg
+7. If you need/want multiple bundles, edit the webpack.config.js file to add more entries (see line 16) and then create the additional js file(s) and include them in src/
 
 ## Install the packages
 ``` npm install ```
@@ -18,8 +19,9 @@ Simple example template illustrating how you can modify a WordPress theme to inc
 ## Run Webpack in production mode
 ``` npm run dist ```
 
-## Run Webpack in watch mode. It will recompile code as you go, making a full build unnecessary while you're developing/making updates
+## Run Webpack in watch mode
+This will recompile code as you go, making a full build unnecessary while you're developing/making updates.
 ``` npm run watch ```
 
 ## Use Font Awesome in your theme
-Include the <i> tag inline where you want it to appear in pages, posts, theme files, etc. Reference the online library to find the free icon you want to add https://fontawesome.com/icons?d=gallery&m=free
+Include the ```<i>``` tag inline where you want it to appear in pages, posts, theme files, etc. Reference the online library to find the free icon you want to add https://fontawesome.com/icons?d=gallery&m=free
